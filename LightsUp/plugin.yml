@@ -1,0 +1,40 @@
+name: LightsUp
+version: 0.7
+description: Swiatla.
+author: Shaquu
+
+main: pl.shaquu.lights.up.MainLight
+
+commands:
+   lightsup:
+      description: Ustawianie lightsup.
+      usage: /<command> [from] [to] or /<command> default [true/false]
+      permission: lightsup.command
+      permission-message: Warning [LightsUp] permission not granted!
+   li:
+      description: /lightsup alias.
+      permission: lightsup.command
+      usage: /<command> [from] [to] or /<command> default [true/false]
+      permission-message: Warning [LightsUp] permission not granted!
+permissions:
+    lightsup.*:
+        description: Wszystkie pozwolenia LightsUp.
+        default: op
+        children:
+            lightsup.torch: true
+            lightsup.pumpkin: true
+            lightsup.lava: true
+            lightsup.glowstone: true
+            lightsup.custom: true
+            lightsup.command: true
+            lightsup.switch: true
+    lightsup.torch:
+        default: true
+    lightsup.pumpkin:
+        default: true
+    lightsup.glowstone:
+        default: true
+    lightsup.custom:
+        default: true
+    lightsup.command:
+        default: op
