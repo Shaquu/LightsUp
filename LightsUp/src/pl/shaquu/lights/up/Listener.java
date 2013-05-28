@@ -16,10 +16,12 @@ public class Listener implements org.bukkit.event.Listener {
 		this.plugin = plugin;
         plugin.getServer().getPluginManager().registerEvents(this, plugin);
     }
+    //Event klikniecia
 	@EventHandler
 	public void onClickDef(PlayerInteractEvent e){
 	    Action act = e.getAction();
 	    Player p = e.getPlayer();
+    	    	//jezeli gracz ma "powietrze" w rece i ma permission
 		if(act==Action.RIGHT_CLICK_BLOCK && p.getItemInHand().getType()==Material.AIR && p.hasPermission("lightsup.custom")){
 			Block b = e.getClickedBlock();
 				int id = e.getClickedBlock().getTypeId();
