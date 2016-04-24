@@ -1,3 +1,3 @@
-LightsUp plugin for Minecraft Bukki server.
+LightsUp plugin for Minecraft Bukkit server.
 ========
 @Shaq
