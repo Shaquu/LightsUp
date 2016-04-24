@@ -1,5 +1,3 @@
-LightsUp
+LightsUp plugin for Minecraft Bukki server.
 ========
-> Zauploadowany w celach edukacyjnych!
-Pozdrawiam Shaquu!
-
+@Shaq
